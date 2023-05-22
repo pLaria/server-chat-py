@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Pr@</title>
+    <link rel="stylesheet" href="estilos.css"  type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="codigo.js"></script>
+  
+  
+    <textarea name="" id="idtextarear" readonly="" rows="8"></textarea>
+    <br>
+    
+    <label>Usuario: </label>
+    <input type="text" id="idusuario" value="">
+    
+    <label>Mensaje: </label>
+    <input type="text" id="idmensaje" value="" onkeypress="">
+    
+    <input type="button" onclick="mostrar('idmensaje','idusuario')" value="Enviar">
+    
+</body>
+</html>
